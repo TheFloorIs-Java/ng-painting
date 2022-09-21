@@ -1,0 +1,8 @@
+<!-- one-way data binding allows us to bind a variable from TS to html -->
+<h3>Title: {{title}}</h3>
+<app-painting-image url={{url}}></app-painting-image>
+<p>Painted by: {{artistName}}</p>
+<!-- event binding: we can bind events from ts to html -->
+<button (click) = "like()">like</button>
+<!-- structural directive: we can use angular to modify the structure of the DOM on the fly -->
+<p *ngIf = "liked">You like this painting!</p>

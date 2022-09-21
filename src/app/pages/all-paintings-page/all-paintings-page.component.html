@@ -1,0 +1,25 @@
+<p>all-paintings-page works!</p>
+<div *ngFor="let painting of paintings">
+    <app-painting-card
+    [title]="painting.title"
+    [url]="painting.url"
+    [artistID]="painting.artistID"
+    ></app-painting-card>
+</div>
+<!--
+<app-painting-card 
+[title]="placeholderPaintings[0].title" 
+[url]="placeholderPaintings[0].url"
+[artistID]="placeholderPaintings[0].artistID"
+></app-painting-card>
+<app-painting-card 
+[title]="placeholderPaintings[1].title" 
+[url]="placeholderPaintings[1].url"
+[artistID]="placeholderPaintings[1].artistID"
+></app-painting-card>
+<app-painting-card 
+[title]="placeholderPaintings[2].title" 
+[url]="placeholderPaintings[2].url"
+[artistID]="placeholderPaintings[2].artistID"
+></app-painting-card>
+-->
